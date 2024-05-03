@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/darkblue"
+    tools:context=".Ui">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/langbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="36dp"
+            android:text="中"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"/>
+
+        <ImageView
+            android:id="@+id/topgun_title"
+            android:layout_width="match_parent"
+            android:layout_height="232dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jet1"
+            app:srcCompat="@drawable/topgun" />
+
+        <ImageView
+            android:id="@+id/jet1"
+            android:layout_width="340dp"
+            android:layout_height="226dp"
+            android:layout_marginTop="72dp"
+            android:rotation="-90"
+            android:src="@drawable/plane"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="TODO" />
+
+        <ImageView
+            android:id="@+id/jet2"
+            android:layout_width="151dp"
+            android:layout_height="131dp"
+            android:rotation="-45"
+            app:layout_constraintBottom_toTopOf="@+id/topgun_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/plane" />
+
+        <ImageView
+            android:id="@+id/jet3"
+            android:layout_width="151dp"
+            android:layout_height="131dp"
+            android:rotation="225"
+            app:layout_constraintBottom_toTopOf="@+id/topgun_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/plane" />
+
+        <Button
+            android:id="@+id/on1"
+            android:layout_width="198dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="107dp"
+            android:layout_marginEnd="106dp"
+            android:layout_marginBottom="136dp"
+            android:text="Continue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/on2"
+            android:layout_width="198dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="107dp"
+            android:layout_marginEnd="106dp"
+            android:layout_marginBottom="81dp"
+            android:text="LEVELS"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/tv1_shop"
+            android:layout_width="198dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="107dp"
+            android:layout_marginEnd="106dp"
+            android:layout_marginBottom="32dp"
+            android:text="SHOP"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
